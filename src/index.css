@@ -1,0 +1,16 @@
+.PGliteRepl-root {
+    max-height: 100vh;
+}
+
+body {
+    font-family: 'EB Garamond';
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('/fonts/EBGaramond-0.016/ttf/EBGaramond08-Regular.ttf') format('truetype'),
+        url('/fonts/EBGaramond-0.016/otf/EBGaramond08-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

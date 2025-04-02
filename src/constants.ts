@@ -1,0 +1,37 @@
+export const CLINICAL_TRIALS_DB_NAME = 'clinical-trials'
+export const CLINICAL_TRIALS_DB_PATH = `/pglite/${CLINICAL_TRIALS_DB_NAME}`
+export const TRIALS_TABLE_NAME = 'trials'
+export const TRIALS_TABLE = {
+    id: 'bigint primary key generated always as identity',
+    nct_number: 'text',
+    study_title: 'text',
+    study_url: 'text',
+    acronym: 'text',
+    study_status: 'text',
+    brief_summary: 'text',
+    study_results: 'text',
+    conditions: 'text',
+    interventions: 'text',
+    primary_outcome_measures: 'text',
+    secondary_outcome_measures: 'text',
+    other_outcome_measures: 'text',
+    sponsor: 'text',
+    collaborators: 'text',
+    sex: 'text',
+    age: 'text',
+    phases: 'text',
+    enrollment: 'integer',
+    funder_type: 'text',
+    study_type: 'text',
+    study_design: 'text',
+    other_ids: 'text',
+    start_date: 'date',
+    primary_completion_date: 'date',
+    completion_date: 'date',
+    first_posted: 'date',
+    results_first_posted: 'date',
+    last_update_posted: 'date',
+    locations: 'text',
+    study_documents: 'text',
+    embedding: 'vector (384)'
+} as const;

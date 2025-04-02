@@ -1,0 +1,36 @@
+.trial {
+    .study-title {
+        background-color: var(--mantine-color-gray-9);
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        padding: 1rem;
+
+        h1 {
+            color: white;
+        }
+    }
+
+    .start-date {
+        padding-bottom: 1rem;
+    }
+
+    .brief-summary {
+        white-space: pre-wrap;
+        padding-top: 1rem;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    &>.mantine-Stack-root>* {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .entry-expand {
+        .mantine-ActionIcon-icon {
+            justify-content: flex-start;
+        }
+    }
+}

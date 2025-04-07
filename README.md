@@ -2,6 +2,8 @@
 
 For a project to create a user interface for an executive to understand the data included in [`data/trials.csv`](data/trials.csv). 
 
+<img src='data/screenshot.png' width='600' alt='Screenshot of the app'>
+
 * Expected time: 2 hours
 * Actual time: ...a bit longer. 
 

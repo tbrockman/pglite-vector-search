@@ -1,5 +1,5 @@
 {
-  "name": "clinical-trials-searcher",
+  "name": "pglite-vector-search",
   "private": true,
   "version": "0.0.1",
   "type": "module",

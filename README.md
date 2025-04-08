@@ -6,7 +6,7 @@ Originally written as a takehome project to create a user interface for an execu
 
 <img src='data/screenshot.png' width='600' alt='Screenshot of the app'>
 
-Features: 
+## Features
 * No server, everything is done in the browser <sup>*except the things done at build-time*</sup>
 * PostgreSQL instance ([`pglite`](https://pglite.dev/)) for search (using [`pgvector`](https://github.com/pgvector/pgvector), though the [`fuzzystrmatch`](https://www.postgresql.org/docs/current/fuzzystrmatch.html) extension is also available)
 * [`transformer.js`](https://huggingface.co/docs/transformers.js/en/index) + [`Supabase/gte-small`](https://huggingface.co/Supabase/gte-small) model for extracting embeddings from user query as well as dataset

@@ -1,7 +1,7 @@
 # `examples/pglite-vector-search`
 > Vector similarity in the browser using `pglite`, `codemirror`, and `react` by [theo](https://theo.lol)
 
-An interactive example of ingesting CSV data into [`pglite`](https://pglite.dev/) to be filtered using [`pgvector`](https://github.com/pgvector/pgvector), in your browser.
+An example of ingesting CSV data into [`pglite`](https://pglite.dev/) to be filtered using [`pgvector`](https://github.com/pgvector/pgvector), in your browser.
 
 Originally written as a takehome project to create a user interface for an executive to understand the data included in [`data/trials.csv`](data/trials.csv). 
 

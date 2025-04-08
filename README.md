@@ -1,4 +1,6 @@
-# a tech company take home
+# example: pglite-vector-search
+
+An interactive example of ingesting CSV data into `pglite` to be filtered using `pgvector`.
 
 For a project to create a user interface for an executive to understand the data included in [`data/trials.csv`](data/trials.csv). 
 

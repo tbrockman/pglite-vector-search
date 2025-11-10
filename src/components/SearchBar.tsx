@@ -16,7 +16,7 @@ interface SearchBarProps {
   loading?: boolean;
 }
 
-export function SearchBar({ onSearch }: SearchBarProps) {
+export function SearchBar({ onSearch, loading }: SearchBarProps) {
   const [textQuery, setTextQuery] = useState('');
   const [sqlQuery, setSqlQuery] = useState(() => getQueryTemplate(textQuery, TRIALS_TABLE_NAME));
   const [pending, setPending] = useState(false);
@@ -35,7 +35,7 @@ export function SearchBar({ onSearch }: SearchBarProps) {
   }, []);
 
   useEffect(() => {
-    if (classifyFn && workerReady) {
+    if (classifyFn && workerReady && !loading) {
       onExecute();
     }
   }, [classifyFn, workerReady]);

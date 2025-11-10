@@ -80,7 +80,7 @@ const TrialCard = ({ trial }: TrialCardProps) => {
                   value &&
                   <Box key={key}>
                     <Title order={3} fw={500} size="lg" mt='8px' mb='8px'>{formatLabel(key)}</Title>
-                    <Text size="sm">
+                    <Text size="sm" ff='monospace'>
                       {(value instanceof Date) ?
                         value?.toLocaleDateString(undefined, {
                           year: 'numeric',

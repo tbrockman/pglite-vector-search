@@ -34,6 +34,12 @@ export function SearchBar({ onSearch }: SearchBarProps) {
     loadWorker();
   }, []);
 
+  useEffect(() => {
+    if (classifyFn && workerReady) {
+      onExecute();
+    }
+  }, [classifyFn, workerReady]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     onExecute();
@@ -63,7 +69,7 @@ export function SearchBar({ onSearch }: SearchBarProps) {
             flex={1}
             disabled={pending || !workerReady}
             autoFocus
-            placeholder="Search clinical trials..."
+            placeholder={"Search clinical trials (eg.\"cancer\") "}
             value={textQuery}
             onSubmit={(e) => handleSubmit(e)}
             onChange={(e) => setTextQuery(e.target.value)}

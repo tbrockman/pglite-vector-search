@@ -5,6 +5,7 @@ import { ingestCSV } from './src/utils/vite';
 
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/pglite-vector-search/' : '/',
   plugins: [
     react(),
     wasm(),

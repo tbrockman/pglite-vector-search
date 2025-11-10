@@ -23,7 +23,7 @@ export function usePGlite() {
           // only fetch and load the database if it hasn't been initialized already
           loadDataDir: await databaseExists(CLINICAL_TRIALS_DB_PATH) ?
             undefined :
-            await fetch('/pglite.bin').then(async res => res.blob())
+            await fetch(`${import.meta.env.BASE_URL}pglite.bin`).then(async res => res.blob())
         });
 
         setDb(pglite);

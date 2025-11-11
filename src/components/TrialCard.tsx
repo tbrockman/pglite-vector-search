@@ -78,8 +78,8 @@ const TrialCard = ({ trial }: TrialCardProps) => {
               <Stack gap="xs" mt="xs" pb='md'>
                 {entries.filter(([key]) => key !== 'brief_summary').map(([key, value]) => (
                   value &&
-                  <Box key={key}>
-                    <Title order={3} fw={500} size="lg" mt='8px' mb='8px'>{formatLabel(key)}</Title>
+                  <Box key={key} className='trial-data-entry'>
+                    <Title className='' order={3} fw={500} size="lg" mt='8px' mb='8px'>{formatLabel(key)}</Title>
                     <Text size="sm" ff='monospace'>
                       {(value instanceof Date) ?
                         value?.toLocaleDateString(undefined, {

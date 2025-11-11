@@ -33,4 +33,17 @@
             justify-content: flex-start;
         }
     }
+    
+    .trial-data-entry {
+        h3 {
+            background-color: var(--mantine-color-gray-9);
+            color: white;
+            padding: 0.5rem;
+            border-radius: var(--paper-radius);
+        }
+
+        p {
+            padding: 0.5rem;
+        }
+    }
 }

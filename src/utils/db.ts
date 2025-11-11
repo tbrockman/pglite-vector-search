@@ -84,7 +84,7 @@ export async function parseEmbeds(
  */
 export const getQueryTemplate = (query: string, tableName: string) => {
     return `select * from ${tableName}
-where ${tableName}.embedding <-> {{ embed("${query}") }} < 0.8
+where ${tableName}.embedding <-> {{ embed("${query}") }} < 0.6
 order by ${tableName}.embedding <-> {{ embed("${query}") }}
 limit 10;
 
